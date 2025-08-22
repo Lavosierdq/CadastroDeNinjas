@@ -2,12 +2,18 @@ package dev.java10X.CadastroDeNinjas.Missoes;
 
 import dev.java10X.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 // criar uma entidade da classe
 @Entity
 //criar uma tabela
 @Table(name = "tb_missoes")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class MissaoModel {
 
     // criar uma Id na tabela

@@ -4,12 +4,19 @@ import dev.java10X.CadastroDeNinjas.Missoes.MissaoModel;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 // JPA = Java Persistence API.
 // Entity transforma uma classe em uma entidade do BD
 @Entity
 
 // table nomeia a tabela no BD
 @Table(name = "tb_cadastro")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 
 
 public class NinjaModel {
